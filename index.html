@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <title>CampusConnect</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elina" />
+
+    <link rel="manifest" href="manifest.json" />
+
+    <meta name="theme-color" content="#0079C2" />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span class="material-symbols-outlined">school</span> CampusConnect
+      </h1>
+      <!-- ylätunnisteessa taustakuva ja tervetuloteksti -->
+      <div class="welcome">
+        <p class="hello">Hei, XXXX!</p>
+        <p>Tervetuloa kampukselle!</p>
+      </div>
+    </header>
+
+    <main>
+      <!-- Pikapalvelut -->
+      <!-- Liitä näihin kuvakkeet ja linkit. -->
+      <section id="quick-services">
+        <a href="../CampusConnect - opiskelijoille/Pisteliikunta httml/Aloitus.html" class="service-btn"
+          ><img src="palvelut/kuvat_palvelut/palvelu_A.png" alt="palveluA"
+        /></a>
+        <a href="#" class="service-btn"
+          ><img src="palvelut/kuvat_palvelut/palvelu_B.png" alt="palveluB"
+        /></a>
+        <a href="#" class="service-btn"
+          ><img src="palvelut/kuvat_palvelut/palvelu_C.png" alt="palveluC"
+        /></a>
+        <a href="#" class="service-btn"
+          ><img src="palvelut/kuvat_palvelut/palvelu_D.png" alt="palvelu_D"
+        /></a>
+      </section>
+
+      <!-- Dashboard: uutiset ja tapahtumat -->
+      <section id="dashboard">
+        <div id="news">
+          <h2>Tärkeimmät tänään</h2>
+          <ul>
+            <!-- start-luokalla nostetaan uutiset etusivulle mobiilissa -->
+            <li class="start">
+              <a href="uutiset/uutinen_campuscafe.html"
+                ><span>Uusi kahvila CampusCafe avattu</span><br />CampusCafe
+                avasi ovensa Pasilan kampuksella. Avajaistarjoukset jatkuvat
+                koko viikon.<span>&gt;</span></a
+              >
+            </li>
+            <li class="start">
+              <a
+                ><span>Suosittu artisti esiintyi avajaisissa</span><br />
+                Pasilan kampuksen avajaisissa esiintyi yksi tämän hetken
+                valovoimaisimmista artisteista. Tilaisuus striimattiin muille
+                kampuksille. <span>&gt;</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span>Uusi opiskelija ruokala on avattu</span> <br />
+                Pasilan kampuksen läheisyyteen on avattu uusi opiskelijaruokala.
+                <span>&gt;</span></a
+              >
+            </li>
+            <li>
+              <span
+                >Johdanto digitaalisiin palveluihin -opintojakso on saanut
+                uudentoimeksiannon</span
+              ><br />Johdanto digitaalisiin palveluihin -opintojakso on saanut
+              uuden toimeksiannon, jossa suunnitellaan ja toteutetaan
+              opiskelijoille suunnattua uutta palvelua helpottamaan heidän
+              arkeaan.
+            </li>
+            <li>
+              <span>Ilmainen joogaviikko 11.- 15.11. </span><br />Marraskuussa
+              toteutetaan yleisön pyynnöstä suuren suosion saanut joogaviikko jo
+              viidennen kerran.
+            </li>
+          </ul>
+        </div>
+
+        <div id="events">
+          <h2>Tulevat tapahtumat</h2>
+
+          <!-- tapahtumakortit: kuva, otsikko, luettelossa tiedot, linkki ilmoittautumislomakkeeseen -->
+          <div class="events-item">
+            <img
+              src="kuvat/juhlat_AI.png"
+              alt="AI:illa tuotettu kuva juhlista"
+            />
+            <div>
+              <h3>Opiskelijabileet</h3>
+              <ul>
+                <li>Pe 18.9.</li>
+                <li>Klo 20:00</li>
+                <li>Juhlatila</li>
+              </ul>
+            </div>
+            <!-- lomakkeet eivät ole vielä käytössä, joten niihin ei ole linkkejä -->
+            <a class="btn-event">Ilmoittaudu</a>
+          </div>
+
+          <div class="events-item">
+            <img
+              src="kuvat/ura_AI.png"
+              alt="AI:illa tuotettu kuva kahden ihmisen tapaamisesta"
+            />
+            <div>
+              <h3>Urapäivät</h3>
+              <ul>
+                <li>Ti 13.10</li>
+                <li>Klo 10:00</li>
+                <li>Tapahtumatori</li>
+              </ul>
+            </div>
+            <a class="btn-event">Ilmoittaudu</a>
+          </div>
+
+          <div class="events-item">
+            <img
+              src="kuvat/jooga_AI.png"
+              alt="AI:illa tuotettu kuva joogaavasta naisesta"
+            />
+            <div>
+              <h3>Joogasessio</h3>
+              <ul>
+                <li>Ke 25.11.</li>
+                <li>Klo 15:00</li>
+                <li>Liikuntasali</li>
+              </ul>
+            </div>
+            <a class="btn-event">Ilmoittaudu</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- linkit portaalin eri osiin -->
+
+      <a href="index.html">
+        <span class="material-symbols-outlined">home</span><br />
+        Koti</a
+      >
+      <a href=""
+        ><span class="material-symbols-outlined">calendar_month</span> <br />
+        Tapahtumat</a
+      >
+      <a href="uutiset.html">
+        <span class="material-symbols-outlined">newspaper</span><br />
+        Uutiset</a
+      >
+      <a href="palvelut.html"
+        ><span class="material-symbols-outlined">home_repair_service</span>
+        <br />
+        Palvelut</a
+      >
+      <a href=""
+        ><span class="material-symbols-outlined">account_circle</span><br />
+        Profiili</a
+      >
+    </footer>
+  </body>
+</html>

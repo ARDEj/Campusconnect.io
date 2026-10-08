@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../Pisteliikunta-css/base.css" rel="stylesheet" />
+    <link href="../Pisteliikunta-css/suoritus.css" rel="stylesheet" />
+    <title>Pisteliikunta</title>
+  </head>
+  <body>
+    <div id="crid">
+      <div id="distance-card">
+        <span id="distance-title">JUOSTAVA MATKA</span>
+        <span id="radiotext">0</span>
+        <span id="distance-unit">KM</span>
+      </div>
+      <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const radiovalue = urlParams.get("radio");
+
+        document.getElementById("radiotext").textContent = radiovalue || "0";
+      </script>
+      <div class="image-window" id="imageWindow">
+        <img
+          src="../assets/Karttta.png" alt="Kartta.png"
+          class="image"
+          id="image"
+          draggable="false"
+        />
+      </div>
+    </div>
+    <script src="../javascrpit/kartta.js"></script>
+  <nav id="alapalkki">
+    <a href="suorituksen%20valinta.html">
+        <span>🏃</span>
+        Suoritus
+    </a>
+
+    <a href="pistekauppa.html">
+        <span>⭐</span>
+        Pistekauppa
+    </a>
+  </nav>
+  </body>
+</html>

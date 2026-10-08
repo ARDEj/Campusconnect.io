@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../Pisteliikunta-css/base.css" rel="stylesheet" />
+    <link href="../Pisteliikunta-css/Suoritus%20valinta.css" rel="stylesheet" />
+    <title>Pisteliikunta</title>
+  </head>
+  <body>
+    <h1>Valitse suoritus</h1>
+    <form action="Suoritus.html">
+      <div class="card">
+        <label class="container">
+          <input
+            type="radio"
+            id="5k"
+            value="5"
+            checked="checked"
+            name="radio"
+          />
+          5 kilometriä
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="card">
+        <label class="container">
+          <input type="radio" id="10k" value="10" name="radio" /> 10 kilometriä
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="card">
+        <label class="container">
+          <input type="radio" id="15k" value="15" name="radio" /> 15 kilometriä
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="card">
+        <label class="container">
+          <input type="radio" id="20k" value="20" name="radio" /> 20 kilometriä
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <input type="submit" value="Valitse" />
+    </form>
+    <nav id="alapalkki">
+      <a href="pistekauppa.html">
+        <span>⭐</span>
+        Pistekauppa
+      </a>
+    </nav>
+  </body>
+</html>

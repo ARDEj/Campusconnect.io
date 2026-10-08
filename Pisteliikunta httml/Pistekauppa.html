@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Pisteliikunta-css/base.css" rel="stylesheet">
+    <link href="../Pisteliikunta-css/pistekauppa.css" rel="stylesheet">
+    <title>Pistekauppa</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="Suoritus.html" id="takaisin">←</a>
+        <h1>Pistekauppa</h1>
+        <div id="pisteet">
+            <span>PISTEET</span>
+            <strong id="points">250</strong>
+        </div>
+    </header>
+
+    <main>
+        <h2>Lunasta palkintoja</h2>
+
+        <div id="palkinnot">
+
+            <div class="palkinto">
+                <div class="ikoni">🎧</div>
+                <h3>Musiikkitauko</h3>
+                <p>Pidä 30 minuutin musiikkitauko.</p>
+                <strong class="hinta">50 pistettä</strong>
+                <button onclick="lunasta(50, 'Musiikkitauko')">Lunasta</button>
+            </div>
+
+            <div class="palkinto">
+                <div class="ikoni">🍫</div>
+                <h3>Välipala</h3>
+                <p>Ansaitse itsellesi herkullinen välipala.</p>
+                <strong class="hinta">100 pistettä</strong>
+                <button onclick="lunasta(100, 'Välipala')">Lunasta</button>
+            </div>
+
+            <div class="palkinto">
+                <div class="ikoni">🎮</div>
+                <h3>Pelitauko</h3>
+                <p>30 minuuttia omaa peliaikaa.</p>
+                <strong class="hinta">150 pistettä</strong>
+                <button onclick="lunasta(150, 'Pelitauko')">Lunasta</button>
+            </div>
+
+            <div class="palkinto">
+                <div class="ikoni">🏆</div>
+                <h3>Erikoispalkinto</h3>
+                <p>Suurempi palkinto kovasta työstä.</p>
+                <strong class="hinta">250 pistettä</strong>
+                <button onclick="lunasta(250, 'Erikoispalkinto')">Lunasta</button>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="ilmoitus"></div>
+
+    <script src="../javascrpit/pistekauppa.js"></script>
+ <nav id="alapalkki">
+    <a href="suorituksen%20valinta.html">
+        <span>🏃</span>
+        Suoritus
+    </a>
+
+    <a href="Suoritus.html">
+        <span>⭐</span>
+        Suoritus
+    </a>
+    </nav>
+</body>
+</html>
