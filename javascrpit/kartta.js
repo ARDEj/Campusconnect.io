@@ -1,3 +1,4 @@
+// Tehty Ai:n avulla
 const container = document.getElementById("imageWindow");
 const image = document.getElementById("image");
 let x = 0;
