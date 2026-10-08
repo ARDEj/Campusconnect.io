@@ -1,3 +1,4 @@
+// Tehty Ai:n avulla
 let points = 250;
 
 const pointsElement = document.getElementById("points");
